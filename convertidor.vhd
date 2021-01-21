@@ -29,7 +29,6 @@ architecture Behavioral of convertidor is
             X(l) <= CARRY(2) xor RB(1) xor CARRY(3);
             CARRY(4) <= (CARRY(2) and RB(l))or (CARRY(3) and (CARRY(2)
             xor RB(1) ) ) ;
-            ContinúaIntegración de entidades en V H D L
             CONV(4) <= X(l) xor RB(3) ;
             CARRY(5)<= X(l)and RB(3);
             CONV(5) <= CARRY(4) xor RB(1) xor CARRY(5);
