@@ -1,10 +1,7 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
+use work.std_arith.all;
 
---this module is for converting a 4 digit BCD number into binary number. 
---the range of the input in decimal is 0 to 9999.
 entity convertidor is port (
     RA : in std_logic_vector(3 downto 0);
     RB : in std_logic_vector(3 downto 0);
