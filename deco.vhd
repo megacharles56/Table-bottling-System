@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 
 entity deco is port (
     A: in std_logic_vector(3 downto 0);
-        d: out std_logic_vector(6 downto 0));
+    d: out std_logic_vector(6 downto 0));
 end deco;
 architecture arqdeco of deco is
 begin

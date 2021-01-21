@@ -1,12 +1,12 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity m_sum is port(
+entity sumador is port(
 	A, B: in std_logic;
 	Suma, Cout: out std_logic);
-end m_sum;
+end sumador;
 
-architecture am_sum of m_sum is
+architecture am_sum of sumador is
 begin
 	Suma <= A xor B;
 	Cout <= A and B;

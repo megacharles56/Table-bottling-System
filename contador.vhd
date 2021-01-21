@@ -2,13 +2,13 @@ library ieee;
 use ieee.std_logic_1164.all;
 use work.std_arith.all;
 
-entity pcount is port(
+entity contador is port(
 	E: inout std_logic;
 	DI: inout std_logic_vector (0 to 7);
 	PC: inout std_logic_vector (3 downto 0));
-end pcount;
+end contador;
 
-architecture a_pc of pcount is
+architecture a_pc of contador is
 begin
 	process (E) begin
 		if (E 'event and E = '1') then
