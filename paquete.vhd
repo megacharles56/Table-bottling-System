@@ -52,9 +52,16 @@ package paquete is
     end component;
 
     component regB is
+        port (
+            Db:   in std_logic_vector(0 to 7);
+            CLKb: in std_logic;
+            Qb:   out std_logic_vector(0 to 7));
     end component;
 
     component decoB is
+        port (
+            Ab: in std_logic_vector(3 downto 0);
+            db: out std_logic_vector(6 downto 0));
     end component;
     
     component mux is
