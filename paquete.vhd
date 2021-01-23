@@ -72,4 +72,11 @@ package paquete is
             z: out std_logic_vector(1 downto 0));
     end component;
 
+    component demux
+      port (
+        z: in std_logic_vector(1 downto 0));	
+        s: in std_logic_vector(1 downto 0);
+        o: out std_logic_vector(3 downto 0);
+    end component;
+
 end paquete;
