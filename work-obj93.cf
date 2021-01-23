@@ -1,0 +1,4 @@
+v 4
+file . "codif.vhd" "e0f114945f0d537507ebd1f2b5b09352b5ed05c8" "20210122064545.522":
+  entity codif at 1( 0) + 0 on 13;
+  architecture arqcodif of codif at 9( 153) + 0 on 14;

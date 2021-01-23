@@ -3,9 +3,9 @@ use ieee.std_logic_1164.all;
 use work.std_arith.all;
 
 entity reg is port (
-    D:   in std_logic_vector(0 to 7);
+    D:   in std_logic_vector(0 to 3); -- Entrada BCD
     CLK: in std_logic;
-    Q:   out std_logic_vector(0 to 7));
+    Q:   out std_logic_vector(0 to 3)); --Salida BCD
 end reg;
 architecture arqreg of reg is
 begin

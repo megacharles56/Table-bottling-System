@@ -2,8 +2,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity deco is port (
-    A: in std_logic_vector(3 downto 0);
-    d: out std_logic_vector(6 downto 0));
+    A: in std_logic_vector(3 downto 0); --Entrada BCD
+    d: out std_logic_vector(6 downto 0)); --Salida 7 segmentos
 end deco;
 architecture arqdeco of deco is
 begin
